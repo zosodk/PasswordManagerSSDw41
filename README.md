@@ -27,6 +27,9 @@ Known issues: The CRUD are implemented but an update or edit to an entry in the 
 
 
 Below is some cruel and nostalgic diagrams - but accurate :)
+Must be viewed as ASCII art in a text editor
+
+Plaintext:
 
 
 System Architecture:

@@ -33,19 +33,18 @@ namespace PasswordManagerSSDw41
 
         private void btnContinue_Click(object sender, EventArgs e)
         {
-            // Check if the login form is already open
-            if (Application.OpenForms["LoginForm"] == null)
+            // Check if any instances of LoginForm exist
+            Form openForm = Application.OpenForms["LoginForm"];
+            if (openForm != null)
             {
-                // Open the LoginForm
-                LoginForm loginForm = new LoginForm();
-                loginForm.Show();
-                this.Hide();
+                // Close the existing one
+                openForm.Close();
             }
-            else
-            {
-                // If LoginForm is already open, bring it to front
-                Application.OpenForms["LoginForm"].BringToFront();
-            }
+
+            // Open a new instance of LoginForm
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
+            this.Hide();
         }
 
 

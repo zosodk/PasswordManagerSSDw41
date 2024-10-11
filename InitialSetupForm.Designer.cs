@@ -208,9 +208,6 @@
             this.btnContinue.UseVisualStyleBackColor = true;
             this.btnContinue.Visible = false;
             this.btnContinue.Click += new System.EventHandler(this.btnContinue_Click);
-
-            this.Controls.Add(this.btnContinue);
-
             // 
             // lblQRCodeLabel
             // 
